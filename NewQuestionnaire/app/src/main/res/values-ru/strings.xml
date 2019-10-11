@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Лаб. работа 2</string>
+    <string name="question">Введите вопрос</string>
+    <string name="answer">Введите ответ</string>
+    <string name="ok">Подтвердить</string>
+</resources>

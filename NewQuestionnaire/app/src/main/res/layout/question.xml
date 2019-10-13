@@ -4,12 +4,6 @@
     android:layout_height="wrap_content"
     android:layout_gravity="center"
     android:orientation="vertical">
-    <TextView
-        android:id="@+id/textView1"
-        style="@style/TextBlock"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-    </TextView>
     <EditText
         android:id="@+id/editText1"
         style="@style/TextBlock"
@@ -19,6 +13,12 @@
         android:hint="@string/question"
         android:inputType="textPersonName">
     </EditText>
+    <TextView
+        android:id="@+id/textView1"
+        style="@style/TextBlock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </TextView>
     <Button
         android:id="@+id/button1"
         style="@style/Button"

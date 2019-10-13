@@ -15,30 +15,42 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private EditText editText;
     private TextView textView;
+    private Button button;
+    private String save;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.question);
-        Button button = findViewById(R.id.button1);
-        editText = findViewById(R.id.editText1);
-        textView = findViewById(R.id.textView1);
-        button.setOnClickListener(this);
+        this.button = findViewById(R.id.button1);
+        this.editText = findViewById(R.id.editText1);
+        this.textView = findViewById(R.id.textView1);
+        if(savedInstanceState != null) {
+            String data = savedInstanceState.getString("Save");
+            this.textView.setText(data);
+            this.save = data;
+        }
+        this.button.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
         Intent intent = new Intent(MainActivity.this, SecondActivity.class);
-        intent.putExtra(QUESTION_KEY, editText.getText().toString());
+        intent.putExtra(QUESTION_KEY, this.editText.getText().toString());
         startActivityForResult(intent, REQUEST_CODE_ANSWER);
     }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        if (requestCode == REQUEST_CODE_ANSWER) {
-            if (resultCode == RESULT_OK) {
-                textView.setText(data.getStringExtra(SecondActivity.ANSWER_KEY));
-            }
+        if (requestCode == REQUEST_CODE_ANSWER && resultCode == RESULT_OK) {
+                this.save = data.getStringExtra(SecondActivity.ANSWER_KEY);
+                this.textView.setText(this.save);
         }
+    }
+
+    @Override
+    public void onSaveInstanceState(Bundle savedInstanceState) {
+        savedInstanceState.putString("Save", this.save);
+        super.onSaveInstanceState(savedInstanceState);
     }
 }

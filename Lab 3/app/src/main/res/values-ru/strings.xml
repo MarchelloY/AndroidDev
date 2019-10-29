@@ -3,4 +3,8 @@
     <string name="question">Введите вопрос</string>
     <string name="answer">Введите ответ</string>
     <string name="ok">Подтвердить</string>
+    <string name="exit">Выйти</string>
+    <string name="exitMessage">Желаете выйти?</string>
+    <string name="yes">Да</string>
+    <string name="no">Нет</string>
 </resources>

@@ -3,4 +3,8 @@
     <string name="question">Enter question</string>
     <string name="answer">Enter answer</string>
     <string name="ok">Submit</string>
+    <string name="exit">Exit</string>
+    <string name="exitMessage">Do you want an exit?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
 </resources>

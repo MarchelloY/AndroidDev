@@ -2,6 +2,8 @@ package com.marchello.newquestionnaire;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -35,5 +37,20 @@ public class SecondActivity extends AppCompatActivity implements View.OnClickLis
         intent.putExtra(ANSWER_KEY, this.editText.getText().toString());
         setResult(RESULT_OK, intent);
         finish();
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.main_menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (item.getItemId() == R.id.exitItem) {
+            MainExitDialog exitDialogFragment = new MainExitDialog();
+            exitDialogFragment.show(getSupportFragmentManager(), "MainExitDialog");
+        }
+        return super.onOptionsItemSelected(item);
     }
 }

@@ -2,7 +2,7 @@
     <string name="app_name">Лабораторная №4</string>
     <string name="ok">Подтвердить</string>
     <string name="inputNumber">Введите число</string>
-    <string name="primeNumbers">Простых чисел: </string>
-    <string name="pieces"> штук!</string>
-    <string name="listOfNumbers">Список чисел: \n</string>
+    <string name="primeNumbers">Простых чисел</string>
+    <string name="pieces">штук!</string>
+    <string name="listOfNumbers">Список чисел:\n</string>
 </resources>

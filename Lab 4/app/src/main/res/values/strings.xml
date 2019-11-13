@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Lab 4</string>
+    <string name="ok">Submit</string>
+    <string name="inputNumber">Input number</string>
+    <string name="primeNumbers">Prime numbers: </string>
+    <string name="pieces"> pieces!</string>
+    <string name="listOfNumbers">List of numbers: \n</string>
+</resources>

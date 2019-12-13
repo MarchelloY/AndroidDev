@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Lab5</string>
+    <string name="input_name">Input Name</string>
+    <string name="input_surname">Input Surname</string>
+    <string name="add_person">Add Person</string>
+    <string name="choose_your_date_of_birth">Choose your date of birth</string>
+    <string name="search">Search</string>
+    <string name="search_param">Input Name or Surname</string>
+    <string name="menuAddText">Add Activity</string>
+    <string name="menuSearchText">Search Activity</string>
+</resources>
